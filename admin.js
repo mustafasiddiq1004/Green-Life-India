@@ -1,4 +1,4 @@
-// admin.js — Diagnostic version
+// admin.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import {
   getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged
@@ -10,6 +10,7 @@ import {
   getStorage, ref, uploadBytes, getDownloadURL, deleteObject
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
 import { firebaseConfig, ADMIN_EMAIL } from "./firebase-config.js";
+
 
 // ---------- Startup diagnostics ----------
 console.log("========================================");
