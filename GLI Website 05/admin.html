@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin Panel | Green Life India</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- LOGIN SCREEN -->
+  <div id="loginScreen" class="login-screen">
+    <div class="login-box">
+      <div class="brand" style="justify-content:center;margin-bottom:20px;">
+        <img src="GLI-logo.png" alt="Green Life India logo">
+        <span>Green Life <b>India</b></span>
+      </div>
+      <h1>Admin Login</h1>
+      <p>Sign in to manage the gallery.</p>
+      <form id="loginForm">
+        <label>Email
+          <input type="email" id="loginEmail" required autocomplete="email" placeholder="admin@greenlifeindia.in">
+        </label>
+        <label>Password
+          <input type="password" id="loginPassword" required autocomplete="current-password" placeholder="••••••••">
+        </label>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Sign In →</button>
+        <p id="loginError" class="error-msg"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" class="dashboard" style="display:none;">
+    <header class="admin-header">
+      <div class="container admin-header-inner">
+        <div class="brand">
+          <img src="GLI-logo.png" alt="">
+          <span>Green Life <b>India</b> — Admin</span>
+        </div>
+        <div class="admin-user">
+          <span id="userEmail"></span>
+          <button id="logoutBtn" class="btn-logout">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container admin-main">
+
+      <!-- UPLOAD FORM -->
+      <section class="admin-card">
+        <h2>Add New Project</h2>
+        <form id="uploadForm">
+          <div class="form-row">
+            <label>Title
+              <input type="text" id="pTitle" required placeholder="e.g. Home Rooftop — Dharampeth">
+            </label>
+            <label>Category
+              <select id="pCategory" required>
+                <option value="residential">Residential</option>
+                <option value="commercial">Commercial</option>
+                <option value="industrial">Industrial</option>
+                <option value="institutional">Institutional</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>System Size
+              <input type="text" id="pSize" required placeholder="e.g. 5 kW">
+            </label>
+            <label>System Type
+              <input type="text" id="pType" placeholder="e.g. On-Grid, Hybrid">
+            </label>
+          </div>
+
+          <label>Location
+            <input type="text" id="pLocation" required placeholder="e.g. Dharampeth, Nagpur">
+          </label>
+
+          <label>Description
+            <textarea id="pDescription" rows="3" required placeholder="Short description of the project..."></textarea>
+          </label>
+
+          <label>Project Image <small>(JPG/PNG/WebP, max 5 MB)</small>
+            <input type="file" id="pImage" accept="image/*" required>
+          </label>
+
+          <label>Video URL <small>(optional — YouTube, Vimeo or MP4 URL)</small>
+            <input type="url" id="pVideo" placeholder="https://youtube.com/watch?v=...">
+          </label>
+
+          <div id="preview" class="preview"></div>
+
+          <button type="submit" class="btn btn-primary" id="uploadBtn">
+            <span id="uploadBtnText">Publish to Gallery →</span>
+          </button>
+          <p id="uploadMsg" class="status-msg"></p>
+        </form>
+      </section>
+
+      <!-- EXISTING PROJECTS -->
+      <section class="admin-card">
+        <h2>Manage Projects <small id="projectCount"></small></h2>
+        <div id="projectsList" class="admin-projects"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

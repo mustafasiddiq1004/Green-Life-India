@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Solar project gallery by Green Life India — residential, commercial, industrial and institutional solar installations across Nagpur, Maharashtra.">
+    <title>Project Gallery | Green Life India</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html" aria-label="Green Life India home">
+                <img src="GLI-logo.png" alt="Green Life India logo">
+                <span>Green Life <b>India</b></span>
+            </a>
+            <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+            <nav id="navLinks">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#why-us">Why Solar</a>
+                <a href="index.html#subsidy">Subsidy</a>
+                <a href="index.html#solar-types">On/Off Grid</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+                <a class="nav-cta" href="tel:+918530773071">Call Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="eyebrow">OUR WORK</div>
+                <h1>Solar Projects Gallery</h1>
+                <p>Explore our completed solar installations across Nagpur and Maharashtra — from residential rooftops
+                    to commercial, industrial and institutional projects.</p>
+            </div>
+        </section>
+
+        <!-- GALLERY PAGE SECTION -->
+        <section class="gallery-page-section">
+            <div class="container">
+                <div class="filter-row">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="residential">Residential</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn" data-filter="industrial">Industrial</button>
+                    <button class="filter-btn" data-filter="institutional">Institutional</button>
+                </div>
+
+                <div id="projectGrid" class="project-grid">
+                    <div class="empty-state" style="grid-column:1/-1;"></div>
+                    <!-- 1 -->
+                    <article class="project-card" data-category="residential">
+                        <div class="project-img">
+                            <img src="assets/images/green life india solar nagpur 1.jpeg"
+                                alt="5 kW on-grid solar system installed on a home rooftop in Dharampeth, Nagpur"
+                                loading="lazy">
+                            <span class="project-badge">Residential • 5 kW</span>
+                        </div>
+                    </article>
+
+                    <!-- 2 -->
+                    <article class="project-card" data-category="residential">
+                        <div class="project-img">
+                            <img src="assets/images/green life india solar nagpur 2.jpeg"
+                                alt="5 kW on-grid solar system installed on a home rooftop in Dharampeth, Nagpur"
+                                loading="lazy">
+                            <span class="project-badge">Residential • 5 kW</span>
+                        </div>
+                    </article>
+
+                    <!-- 3 -->
+                    <article class="project-card" data-category="industrial">
+                        <div class="project-img">
+                            <img src="assets/images/green life india solar nagpur 3.jpeg"
+                                alt="5 kW on-grid solar system installed on a home rooftop in Dharampeth, Nagpur"
+                                loading="lazy">
+                            <span class="project-badge">Residential • 5 kW</span>
+                        </div>
+                    </article>
+
+                    <!-- 4 -->
+                    <article class="project-card" data-category="residential">
+                        <div class="project-img">
+                            <img src="assets/images/green life india solar nagpur 4.jpeg"
+                                alt="5 kW on-grid solar system installed on a home rooftop in Dharampeth, Nagpur"
+                                loading="lazy">
+                            <span class="project-badge">Residential • 5 kW</span>
+                        </div>
+                    </article>
+
+                    <!-- 5 -->
+                    <article class="project-card" data-category="industrial">
+                        <div class="project-img">
+                            <img src="assets/images/green life india solar nagpur 5.jpg"
+                                alt="5 kW on-grid solar system installed on a home rooftop in Dharampeth, Nagpur"
+                                loading="lazy">
+                            <span class="project-badge">Residential • 5 kW</span>
+                        </div>
+                    </article>
+
+                    <!-- 6 -->
+                    <article class="project-card" data-category="institutional">
+                        <div class="project-img">
+                            <img src="assets/images/green life india solar nagpur 6.jpeg"
+                                alt="5 kW on-grid solar system installed on a home rooftop in Dharampeth, Nagpur"
+                                loading="lazy">
+                            <span class="project-badge">Residential • 5 kW</span>
+                        </div>
+                    </article>
+
+                    <!-- 7 -->
+                    <article class="project-card" data-category="industrial">
+                        <div class="project-img">
+                            <img src="assets/images/green life india solar nagpur 7.jpeg"
+                                alt="5 kW on-grid solar system installed on a home rooftop in Dharampeth, Nagpur"
+                                loading="lazy">
+                            <span class="project-badge">Residential • 5 kW</span>
+                        </div>
+                    </article>
+
+                    <!-- 8 -->
+                    <article class="project-card" data-category="commercial">
+                        <div class="project-img">
+                            <img src="assets/images/green life india solar nagpur 8.jpeg"
+                                alt="5 kW on-grid solar system installed on a home rooftop in Dharampeth, Nagpur"
+                                loading="lazy">
+                            <span class="project-badge">Residential • 5 kW</span>
+                        </div>
+                    </article>
+
+                    <!-- 9 -->
+                    <article class="project-card" data-category="industrial">
+                        <div class="project-img">
+                            <img src="assets/images/green life india solar nagpur 9.jpeg"
+                                alt="5 kW on-grid solar system installed on a home rooftop in Dharampeth, Nagpur"
+                                loading="lazy">
+                            <span class="project-badge">Residential • 5 kW</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <div class="container">
+                <div class="gallery-head">
+                    <div class="eyebrow">WATCH</div>
+                    <h2>Our Solar Installations in Action</h2>
+                    <p>See how we plan, install, and commission solar systems across Nagpur.</p>
+                </div>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/f3rhROuBMTI?si=UrBOebQ7Ql11vz90"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-card">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/DCWW76YkUJ0?si=_tuDjAHNbkSpeJsj"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA BAND -->
+        <section class="cta-band">
+            <div class="container">
+                <h2>Ready to start your solar project?</h2>
+                <p>Get a free consultation and quote for your home, business or institution.</p>
+                <a class="btn btn-primary" href="index.html#contact">Get a Free Quote <span>→</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="brand footer-brand"><img src="GLI-logo.png" alt=""><span>Green Life <b>India</b></span></div>
+            <p>© <span id="year"></span> Green Life India. Solar solutions in Nagpur, Maharashtra.</p>
+            <a href="tel:+918530773071">+91 85307 73071</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+        document.querySelectorAll('#navLinks a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Gallery filter
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const cat = btn.dataset.filter;
+                document.querySelectorAll('.project-card').forEach(card => {
+                    card.style.display = (cat === 'all' || card.dataset.category === cat) ? '' : 'none';
+                });
+            });
+        });
+    </script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+        import { getFirestore, collection, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+        import { firebaseConfig } from "./firebase-config.js";
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const grid = document.getElementById("projectGrid");
+
+        function youtubeEmbed(url) {
+            if (!url) return null;
+            const yt = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+            if (yt) return `https://www.youtube.com/embed/${yt[1]}`;
+            const vm = url.match(/vimeo\.com\/(\d+)/);
+            if (vm) return `https://player.vimeo.com/video/${vm[1]}`;
+            return null; // assume direct MP4
+        }
+
+        function iconFor(category) {
+            return { residential: "⌂", commercial: "▦", industrial: "⚡", institutional: "▦" }[category] || "☀";
+        }
+
+        async function loadGallery() {
+            try {
+                const q = query(collection(db, "projects"), orderBy("createdAt", "desc"));
+                const snap = await getDocs(q);
+                const items = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+
+                if (!items.length) {
+                    grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1;">No projects yet. Check back soon!</div>';
+                    return;
+                }
+
+                grid.innerHTML = items.map(p => {
+                    const embed = youtubeEmbed(p.videoUrl);
+                    const videoBlock = embed
+                        ? `<div class="project-video"><iframe src="${embed}" allowfullscreen loading="lazy" title="${escapeHtml(p.title)} video"></iframe></div>`
+                        : (p.videoUrl
+                            ? `<div class="project-video"><video src="${escapeHtml(p.videoUrl)}" controls preload="metadata"></video></div>`
+                            : "");
+
+                    return `
+        <article class="project-card" data-category="${escapeHtml(p.category)}">
+          <div class="project-img">
+            <img src="${escapeHtml(p.imageUrl)}" alt="${escapeHtml(p.title)} — ${escapeHtml(p.size)} solar installation" loading="lazy">
+            <span class="project-badge">${escapeHtml(p.category)} • ${escapeHtml(p.size)}</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">${escapeHtml(p.type || "")}${p.type ? " • " : ""}${escapeHtml(p.location)}</div>
+            <h3>${escapeHtml(p.title)}</h3>
+            <p>${escapeHtml(p.description)}</p>
+            ${videoBlock}
+          </div>
+        </article>
+      `;
+                }).join("");
+            } catch (err) {
+                console.error(err);
+                grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1;">Could not load projects. Please refresh.</div>`;
+            }
+        }
+
+        function escapeHtml(str = "") {
+            return String(str).replace(/[&<>"']/g, c => ({
+                "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+            }[c]));
+        }
+
+        loadGallery();
+    </script>
+</body>
+
+</html>
