@@ -2,13 +2,13 @@
 // Plain global config — NO imports, NO exports
 
 window.FIREBASE_CONFIG = {
-  apiKey: "AIzaSyB56yTog2Hdu44hxIzEeh9ooy9SPYIZ-GA",
-  authDomain: "green-life-india-6e253.firebaseapp.com",
-  projectId: "green-life-india-6e253",
-  storageBucket: "green-life-india-6e253.firebasestorage.app",
-  messagingSenderId: "712681280286",
-  appId: "1:712681280286:web:afeae2f2070fac23bbaf0f",
-  measurementId: "G-V5M07PTHKV"
+  apiKey: "AIzaSyBZ04tmNxMiM7iLvaBx80rhhLZ9cIjfZ2c",
+  authDomain: "greenlifeindia-a1db3.firebaseapp.com",
+  projectId: "greenlifeindia-a1db3",
+  storageBucket: "greenlifeindia-a1db3.firebasestorage.app",
+  messagingSenderId: "665384044180",
+  appId: "1:665384044180:web:34d195179991cf3350d681",
+  measurementId: "G-K319W7R3K2"
 };
 
 window.ADMIN_EMAIL = "greenlifeindia.nagpur@gmail.com";
